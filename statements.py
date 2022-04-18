@@ -13,7 +13,7 @@ d = [1, 5, 25, 125]
 if a<10 and a>2:
     print("a is a value between 2 and 10")
 if a<6 or a>6:
-    print("this information is a clue")
+    print("this information is useless")
 if not(a<10 and a>2):
     print("this is the opposite of the first statement")
 if a is b:
