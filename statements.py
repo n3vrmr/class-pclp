@@ -6,8 +6,8 @@ Created on Sun Apr 17 23:37:07 2022
 """
 # change the values of variables 'a' and 'b' to see the changes in the code
 
-a = int(input("Choose ant int value for a: "))
-b = int(input("Choose ant int value for b: "))
+a = int(input("Choose an int value for a: "))
+b = int(input("Choose an int value for b: "))
 c = [0, 5, 10, 15]
 d = [1, 5, 25, 125]
 if a<10 and a>2:
