@@ -8,7 +8,7 @@ Created on Wed Apr 20 13:14:50 2022
 prof = {"name":"Álvaro", "age":33, "temperature":36.5, "has_cats":True}
 
 
-if prof["temperature"] < 38: #this line returns an error, console reads: "AttributeError: 'str' object has no attribute 'value'"
+if prof["temperature"] < 38:
     print("Álvaro peut entrer.")
 if prof["has_cats"] == True:
     print("\033[1;34;47mProfesseur Álvaro a trois chats.\033[0m")
