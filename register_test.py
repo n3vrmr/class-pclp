@@ -17,6 +17,7 @@ while go:
     user["major"] = input("Major: ")
     users.append(user)
     cont = input("\033[1;31;47mContinue? Reply Y for Yes or N for No.\033[0m ")
+    cont = cont.lower().strip()
     if cont == "Y":
        go = True
     elif cont == "N":
