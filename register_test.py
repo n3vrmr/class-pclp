@@ -10,7 +10,7 @@ users = []
 go = True
 while go:
     go = False
-    user = {"name": " ", "age": int(), "registry": int(), "major": " "}
+    user = {}
     user["name"] = input("Name: ")
     user["age"] = int(input("Age: "))
     user["registry"] = int(input("Registry number: "))
