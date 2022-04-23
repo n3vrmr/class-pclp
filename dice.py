@@ -31,8 +31,8 @@ def roll_d4():
     """
     d4 = random.randint(1,4)
     if d4 >=1 and d4 <=4:
-        print(int(d4))
-        return int(d4)
+        print(f"{d4}")
+        return f"{d4}"
 
 def roll_d6():
     """ Rolls a six sided die
