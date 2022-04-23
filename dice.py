@@ -8,11 +8,11 @@ import random
 import numpy as np
 
 def roll_d2():
-    """ Rolls a two sided die (coin toss)
+    """ Rolls a two sided die (coin toss).
     
     """
     d2 = random.randint(1,2)
-    if d2 == 1 or d2 == 2:
+    if d2 >= 1:
         print(f"{d2}")
         return f"{d2}"
 
@@ -21,8 +21,8 @@ def roll_d3():
     
     """
     d3 = random.randint(1,3)
-    if d3 >=1 and d3 <=3:
-        print("f{d3}")
+    if d3 >=1:
+        print(f"{d3}")
         return f"{d3}"
 
 def roll_d4():
@@ -30,16 +30,16 @@ def roll_d4():
 
     """
     d4 = random.randint(1,4)
-    if d4 >=1 and d4 <=4:
+    if d4 >=1:
         print(f"{d4}")
         return f"{d4}"
 
 def roll_d6():
-    """ Rolls a six sided die
+    """ Rolls a six sided die.
     
     """
     d6 = random.randint(1,6)
-    if d6 >=1 and d6 <=6:
+    if d6 >=1:
         print(f"{d6}")
         return f"{d6}"
 
@@ -48,7 +48,7 @@ def roll_d8():
     
     """
     d8 = random.randint(1,8)
-    if d8 >=1 and d8 <=8:
+    if d8 >=1:
         print(f"{d8}")
         return(f"{d8}")
 
@@ -57,7 +57,7 @@ def roll_d10():
     
     """
     d10 = random.randint(1,10)
-    if d10 >=1 and d10 <=10:
+    if d10 >=1:
         print(f"{d10}")
         return f"{d10}"
     
@@ -66,7 +66,7 @@ def roll_d12():
     
     """
     d12 = random.randint(1,12)
-    if d12 >=1 and d12 <=12:
+    if d12 >=1:
         print(f"{d12}")
         return f"{d12}"
     
