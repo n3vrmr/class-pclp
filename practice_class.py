@@ -4,8 +4,11 @@ Created on Thu May  5 16:35:05 2022
 
 @author: Nevermore
 """
+from datetime import datetime
 
 class Pessoa:
+    ano_atual = int(datetime.strftime(datetime.now(), '%Y'))
+    
     def __init__(self, nome, idade, comendo = False, falando = False):
         self.nome = nome
         self.idade = idade
@@ -47,7 +50,17 @@ class Pessoa:
     def parar_comer(self):
         if not self.comendo:
             print(f"{self.nome} não está comendo.")
+        else:
+            print(f"{self.nome} parou de comer.")
+            self.comendo = False
             return
+    
+    def ano_nascimento(self):
+        return self.ano_atual - self.idade
         
-        print(f"{self.nome} parou de comer.")
-        self.comendo = False
+    def pan(cls,nome,ano_nascimento):
+        idade = cls.ano_atual - ano_nascimento
+        return cls(nome,idade)
+    
+    
+p1 = Pessoa.pan("Luiza",1997)

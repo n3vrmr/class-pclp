@@ -11,3 +11,7 @@ p1 = Pessoa("Nevermore", 22)
 p2 = Pessoa("Mat", 22)
 p1.falar("Rocket League")
 p2.falar("química")
+print(p1.ano_atual)
+print(Pessoa.ano_atual)
+
+print(p1.ano_nascimento())
