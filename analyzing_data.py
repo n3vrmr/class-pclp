@@ -43,6 +43,12 @@ highest = df["Deaths per million (total)"] == mortality
 country = df[highest]
 print(country["Country"])
 
+# Country with most total deaths
+death = df["Confirmed deaths (absolute)"].max()
+absolute = df["Confirmed deaths (absolute)"] == death
+c = df[absolute]
+print("Country with most total deaths:",c["Country"])
+
 # Total cases
 total_cases = df["Confirmed cases (absolute)"]
 print("Total worldwide confirmed cases of COVID-19:",sum(total_cases))
