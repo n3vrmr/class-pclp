@@ -54,3 +54,9 @@ print("Total worldwide confirmed deaths caused by COVID-19:",sum(total_deaths))
 # Worldwide deaths per case
 dpc = sum(total_deaths)/sum(total_cases)
 print("Worldwide deaths per case:",dpc)
+
+def main():
+    print("COVID-19 data")
+
+if __name__ == '__main__':
+    main()
