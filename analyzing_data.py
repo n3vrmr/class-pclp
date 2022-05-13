@@ -41,7 +41,7 @@ d = df[most_deaths].sort_values("Deaths per million (total)", ascending=False)
 mortality = w["Deaths per million (total)"].max()
 highest = df["Deaths per million (total)"] == mortality
 country = df[highest]
-print(country)
+print(country["Country"])
 
 # Total cases
 total_cases = df["Confirmed cases (absolute)"]
