@@ -45,7 +45,7 @@ d = df[most_deaths].sort_values("Deaths per million (total)", ascending=False)
 
 # w.plot.bar(x="Country",y="Deaths per million (total)")
 
-# Country with the most deaths per number of cases
+# Country with the most deaths per million/number of cases
 mortality = w["Deaths per million (total)"].max()
 highest = df["Deaths per million (total)"] == mortality
 country = df[highest]
