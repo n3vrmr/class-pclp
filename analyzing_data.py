@@ -13,12 +13,20 @@ t.sleep(2)
 df = pd.read_html(url, match="Characteristic")
 df = df[0]
 df.rename(columns = {"Characteristic":"Country"}, inplace = True)
-df.loc[17,["Country"]] = "USA"
-df.loc[26,["Country"]] = "UK"
-df.loc[35,["Country"]] = "France"
-df.loc[53,["Country"]] = "Netherlands"
-df.loc[63,["Country"]] = "Denmark"
-df.loc[100,["Country"]] = "UAE"
+
+def sub_country_name(i:int,country:str):
+    """Given the indice 'i' of a country in the dataframe, substitutes its name for the
+    'country' argument.
+    """
+    df.loc[i,["Country"]] = f"{country}"
+    return country
+
+sub_country_name(17, "USA")
+sub_country_name(26, "UK")
+sub_country_name(35, "France")
+sub_country_name(53, "Netherlands")
+sub_country_name(63, "Denmark")
+sub_country_name(100, "UAE")
 
 brazil = df[df["Country"] == "Brazil"]
 australia = df[df["Country"] == "Australia"]
